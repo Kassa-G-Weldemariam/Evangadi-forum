@@ -14,7 +14,7 @@ A full-stack forum application that allows users to post questions and interact 
 - Express.js
 
 ### Database
-- MySQL (or your database — adjust if needed)
+- MySQL 
 
 ## 🎯 Features
 - User registration and login
