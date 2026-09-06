@@ -32,7 +32,7 @@ function App() {
     <Routes>
       <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
       <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
-      <Route path="/" element={<Layout><Home /></Layout>} />
+      <Route path="/" element={<ProtectedRoute><Layout><Home /></Layout></ProtectedRoute>} />
       <Route path="/ask" element={<ProtectedRoute><ProtectedLayout><Ask /></ProtectedLayout></ProtectedRoute>} />
       <Route path="/questions/:questionid" element={<ProtectedRoute><ProtectedLayout><QuestionDetail /></ProtectedLayout></ProtectedRoute>} />
       <Route path="*" element={<Navigate to="/" replace />} />
