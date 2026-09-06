@@ -1,1 +1,78 @@
+.app-shell { display: flex; flex-direction: column; min-height: 100vh; }
+.site-header { background: #123b68; color: #fff; }
+.site-header__inner, .site-footer__inner, .site-main { width: min(100% - 2rem, 72rem); margin-inline: auto; }
+.site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; }
+.brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.brand:hover { color: #fff; }
+.site-nav { display: flex; align-items: center; justify-content: flex-end; gap: 1rem; }
+.site-nav a:not(.button) { color: #fff; text-decoration: none; }
+.site-nav a:not(.button):hover { text-decoration: underline; }
+.user-greeting { color: #dbeafe; font-size: .95rem; }
+.button { display: inline-block; padding: .6rem 1rem; border: 1px solid #2563eb; border-radius: .35rem; color: #fff; background: #2563eb; font-weight: 600; text-decoration: none; cursor: pointer; }
+.button:hover { border-color: #1d4ed8; color: #fff; background: #1d4ed8; }
+.button--secondary { border-color: #93c5fd; background: transparent; }
+.button--secondary:hover { background: #1e4f80; }
+.button--outline { border-color: #2563eb; color: #185abc; background: transparent; }
+.button--outline:hover { color: #fff; background: #2563eb; }
+.site-main { flex: 1; padding-block: 2.5rem; }
+.home-page { width: min(100%, 58rem); margin: 0 auto; }
+.home-page__intro { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; }
+.home-page h1 { margin: 0 0 .5rem; color: #123b68; }
+.home-page h2 { color: #123b68; }
+.success-message { margin: 0 0 1.5rem; padding: .85rem 1rem; border: 1px solid #86efac; border-radius: .35rem; color: #166534; background: #f0fdf4; }
+.question-list { display: grid; gap: 1rem; }
+.question-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem; border: 1px solid #dbe3ee; border-radius: .5rem; background: #fff; box-shadow: 0 3px 12px #1e3a5f0b; }
+.question-card__content { min-width: 0; }
+.question-card h2 { margin: 0 0 .7rem; font-size: 1.15rem; }
+.question-card h2 a { overflow-wrap: anywhere; }
+.question-card h2 a { color: #123b68; text-decoration: none; }
+.question-card h2 a:hover { text-decoration: underline; }
+.question-card__meta { display: flex; flex-wrap: wrap; gap: .75rem; color: #64748b; font-size: .9rem; }
+.state-card { padding: 1.5rem; border: 1px dashed #b8c7d9; border-radius: .5rem; background: #fff; }
+.state-card p { margin-top: 0; }
+.page { width: min(100%, 48rem); margin: 0 auto; padding: 2rem; border: 1px solid #e2e8f0; border-radius: .6rem; background: #fff; box-shadow: 0 5px 18px #1e3a5f0d; }
+.page h1 { margin-top: 0; color: #123b68; }
+.page nav { margin-top: 1.5rem; }
+.site-footer { margin-top: auto; border-top: 1px solid #dbe3ee; background: #eaf0f7; }
+.site-footer__inner { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; color: #475569; font-size: .9rem; }
+.loading { display: grid; min-height: 8rem; place-items: center; padding: 1rem; color: #123b68; font-weight: 600; }
+.auth-page { display: grid; min-height: 100vh; place-items: center; padding: 1rem; }
+.auth-form { display: grid; width: min(100%, 30rem); gap: .85rem; padding: 2rem; border: 1px solid #e2e8f0; border-radius: .6rem; background: #fff; box-shadow: 0 5px 18px #1e3a5f0d; }
+.auth-form h1 { margin: 0 0 .5rem; color: #123b68; }
+.auth-form label { display: grid; gap: .3rem; font-weight: 600; }
+.auth-form input { width: 100%; padding: .65rem; border: 1px solid #94a3b8; border-radius: .25rem; }
+.auth-form button { padding: .7rem 1rem; border: 0; border-radius: .3rem; color: #fff; background: #2563eb; font-weight: 600; cursor: pointer; }
+.auth-form button:hover { background: #1d4ed8; }
+.auth-form button:disabled { opacity: .6; cursor: wait; }
+.error { margin: 0; color: #b42318; }
+.ask-page { max-width: 48rem; }
+.question-form { display: grid; gap: .55rem; margin-top: 1.5rem; }
+.question-form label { font-weight: 600; }
+.question-form input, .question-form textarea { width: 100%; padding: .7rem; border: 1px solid #94a3b8; border-radius: .3rem; resize: vertical; }
+.question-form input:focus, .question-form textarea:focus { border-color: #2563eb; }
+.question-form__actions { display: flex; justify-content: flex-end; gap: .75rem; margin-top: .75rem; }
+.button--secondary-light { border-color: #94a3b8; color: #334155; background: #fff; }
+.button--secondary-light:hover { border-color: #64748b; color: #1e293b; background: #f8fafc; }
+.detail-page { width: min(100%, 58rem); margin: 0 auto; }
+.back-link { display: inline-block; margin-bottom: 1rem; }
+.question-detail { padding: 2rem; border: 1px solid #e2e8f0; border-radius: .6rem; background: #fff; box-shadow: 0 5px 18px #1e3a5f0d; }
+.question-detail h1 { margin-top: 0; color: #123b68; }
+.question-detail__description { margin: 1.5rem 0 0; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.7; }
+.answers-section { margin-top: 2rem; }
+.answers-section h2 { color: #123b68; }
+.answer-list { display: grid; gap: 1rem; }
+.answer-card { padding: 1.25rem; border: 1px solid #dbe3ee; border-radius: .5rem; background: #fff; }
+.answer-card p { margin: 0 0 .75rem; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; }
+.answer-card__meta { display: flex; flex-wrap: wrap; gap: .75rem; color: #64748b; font-size: .9rem; }
+.answer-form { margin-top: 2rem; padding: 1.5rem; border: 1px solid #dbe3ee; border-radius: .5rem; background: #fff; }
+.answer-login-prompt { margin-top: 2rem; }
 
+@media (max-width: 600px) {
+  .site-header__inner { align-items: flex-start; flex-direction: column; padding-block: 1rem; }
+  .site-nav { flex-wrap: wrap; justify-content: flex-start; }
+  .site-main { padding-block: 1.25rem; }
+  .page, .auth-form { padding: 1.25rem; }
+  .question-detail, .answer-form { padding: 1.25rem; }
+  .home-page__intro, .question-card { align-items: flex-start; flex-direction: column; }
+  .site-footer__inner { align-items: flex-start; flex-direction: column; }
+}
